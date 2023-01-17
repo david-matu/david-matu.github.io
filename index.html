@@ -1,14 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Dave Diaries</title>
+  	<title>Dave Hub</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Welcome to Dave Hub. Inside: projects, topics, and public ideas. In a world you can be anything... I am doing my hobbies here">
+    <meta name="twitter:image:src" content="https://avatars.githubusercontent.com/u/108116740?v=4?s=400" />
+    <meta name="twitter:site" content="@github" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="david-matu - Overview" />
+    <meta name="twitter:description" content="Welcome to Dave Hub. Inside: projects, topics, and public ideas. In a world you can be anything... I am doing my hobbies here" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/108116740?v=4?s=400" />
+    <meta property="og:image:alt" content="Welcome to Dave Hub. Inside: projects, topics, and public ideas. In a world you can be anything... I am doing my hobbies here" />
+    <meta property="og:site_name" content="GitHub" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="david-matu - Overview" />
+    <meta property="og:url" content="https://github.com/david-matu" />
+    <meta property="og:description" content="Welcome to Dave Hub. Inside: projects, topics, and public ideas. In a world you can be anything... I am doing my hobbies here" />
+    <meta property="profile:username" content="david-matu" />
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dave.css">
   </head>
   <body>
 		
@@ -55,15 +71,41 @@
 
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
-        <div class="p-5 mb-4 bg-light rounded-3">
-            <div class="container-fluid py-5">
-                <h1 class="fw-bolder"><strong>Dave Diaries</strong></h1>
-                <p class="col-md-8 fs-4"><p>Welcome to my diaries. Herein: general information guiding on dev tasks</p></p>
-                <a class="btn btn-outline-dark btn-lg" href="https://github.com/david-matu" target="_blank"><i class="fa fa-fw fa-github fa-lg"></i>Github</a>
+        <div class="p-5 mb-4 rounded-3 bg-light" style="border: 12px ridge #5A0; border-radius: 16px; border-bottom: 10px ridge #4A2; background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190628/ourmid/pngtree-high-tech-background-image_265852.jpg');">
+            <div class="container-fluid py-5" style="font-size: 1.2rem;">
+                <h1 class="fw-bolder text-white"><strong>Dave Diaries</strong></h1>
+                <p class="col-md-8 fs-5 text-white"><p class="text-white">Welcome to my diaries. Herein: general information guiding on dev tasks</p></p>
+                <a class="btn btn-dark btn-lg" href="https://github.com/david-matu" target="_blank" style="z-index: 100000;"><i class="fa fa-fw fa-github fa-lg"></i>Github</a>
             </div>
+
+            <div class="card h-100" id="bouncyCircle"></div>
         </div>
 
-        <footer class="pt-3 mt-4 text-center border-bottom fixed-bottom fw-bolder text-primary">
+        <div class="card" id="amaze" style="background: #000; min-height: 25rem; overflow-y: hidden;">
+          <div><div><div><div><div><div><div><div><div><div>
+          <div><div><div><div><div><div><div><div><div><div>
+          <div><div><div><div><div><div><div><div><div><div>
+          <div><div><div><div><div><div><div><div><div><div>
+          <div><div><div><div><div><div><div><div><div><div>
+          <div><div><div><div><div><div><div><div><div><div>
+          <div><div><div><div><div><div><div><div><div><div>
+          <div><div><div><div><div><div><div><div><div><div>
+          <div><div><div><div><div><div><div><div><div><div>
+          <div><div><div><div><div><div><div><div><div><div>
+          </div></div></div></div></div></div></div></div></div></div>
+          </div></div></div></div></div></div></div></div></div></div>
+          </div></div></div></div></div></div></div></div></div></div>
+          </div></div></div></div></div></div></div></div></div></div>
+          </div></div></div></div></div></div></div></div></div></div>
+          </div></div></div></div></div></div></div></div></div></div>
+          </div></div></div></div></div></div></div></div></div></div>
+          </div></div></div></div></div></div></div></div></div></div>
+          </div></div></div></div></div></div></div></div></div></div>
+          </div></div></div></div></div></div></div></div></div></div>
+        </div>
+        <p>Credits: <a href="https://bbbootstrap.com/snippets/100-divs-recursive-mesh-19701437">Team Cube</a></p>
+
+        <footer class="pt-3 mt-4 text-center border-bottom fixed-bottom fw-bolder text-primary bg-light" style="z-index: 1;">
           &copy; Dave Diaries - 2023
         </footer>
       </div>
@@ -76,5 +118,31 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+    <script>
+      const bouncyCircle = new mojs.Shape({
+      parent:       '#bouncyCircle',
+      shape:        'circle',
+      fill:         {'#0F0': '#2F3'},
+      radius:       {10: 30},
+      duration:     2000,
+      isYoyo:       true,
+      isShowStart:  true,
+      easing:       'elastic.inout',
+      repeat:       200,
+    });
+
+    bouncyCircle.play();
+
+    let rot = 0;
+    tick();
+
+    function tick() {
+      requestAnimationFrame(tick);
+      rot += 0.02;
+      document.body.style.setProperty("--rot", `${rot}deg`);
+    }
+    </script>
   </body>
 </html>
