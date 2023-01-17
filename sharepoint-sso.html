@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SharePoint 2019 & WSO2 IS - David Matu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dave.css">
+  </head>
+  <body>
+    
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          </button>
+        </div>
+        <div class="img bg-wrap text-center py-4" style="background-image: url(images/bg_1.jpg);">
+          <div class="user-logo">
+            <div class="img" style="background-image: url(https://avatars.githubusercontent.com/u/108116740?v=4);"></div>
+            <h3>David Matu</h3>
+          </div>
+        </div>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a class="" href="index.html"><span class="fa fa-home mr-3"></span> Home</a>
+          </li>
+          <li>
+              <a class="" href="sharepoint-sso.html"><span class="fa fa-lock mr-3 notif"><small class="d-flex align-items-center justify-content-center">1</small></span> SSO: Sharepoint & WSO2 Identity Server</a>
+          </li>
+          <li>
+              <a class="d-none" href="#"><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">5</small></span> Download</a>
+          </li>
+          <li>
+            <a class="d-none" href="#"><span class="fa fa-gift mr-3"></span> Gift Code</a>
+          </li>
+          <li>
+            <a class="d-none" href="#"><span class="fa fa-trophy mr-3"></span> Top Review</a>
+          </li>
+          <li>
+            <a class="d-none" href="#"><span class="fa fa-cog mr-3"></span> Settings</a>
+          </li>
+          <li>
+            <a class="d-none" href="#"><span class="fa fa-support mr-3"></span> Support</a>
+          </li>
+          <li>
+            <a class="d-none" href="#"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>
+          </li>
+        </ul>
+
+      </nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="fw-bolder"><strong>Dave Diaries</strong></h1>
+                <h4 class="text-primary fw-bolder">SharePoint 2019 & WSO2 IS</h4>
+                <p class="col-md-8 fs-4"><p>These are overview guides on integration Microsoft SharePoint 2019 with WSO2 Identity Server</p></p>
+                <a class="btn btn-outline-dark btn-lg" href="https://github.com/david-matu" target="_blank"><i class="fa fa-fw fa-github fa-lg"></i>Github</a>
+            </div>
+
+        </div>
+
+        <div class="card shadow shadow-lg border border-success">
+              
+          <div class="card-body story">
+            <p>To configure SAML-based single sign-on (SSO) for SharePoint 2019, you will need to perform the following steps:</p>
+
+            <p>
+              <ol>
+                <li>Configure SharePoint to use SAML-based authentication.<br>
+                  <ul>
+                    <li>In SharePoint Central Administration, navigate to the "Security" section and select "Configure authentication providers." Select the web application that you want to configure and select "SAML" as the authentication type.</li>
+                  </ul>
+                </li>
+
+                <li>Configure a SAML identity provider (IdP) to authenticate users.<br>
+                  <ul>
+                    <li>You will need to use an identity provider such as ADFS, Okta, or OneLogin, to configure SAML-based authentication for SharePoint. Each IdP has its own configuration procedures, so you will need to refer to the IdP's documentation for specific instructions.</li>
+                  </ul>
+                </li>
+
+                <li>Configure SharePoint to trust the SAML IdP.<br>
+                  <ul>
+                    <li>In SharePoint Central Administration, navigate to the "Security" section and select "Configure trust relationships." Select the web application that you want to configure, and then add the SAML IdP as a trusted identity provider.</li>
+                  </ul>
+                </li>
+                <li>Test the configuration to make sure it is working correctly.<br>
+                  <ul>
+                    <li>Test the configuration by accessing the SharePoint site using a web browser. You should be prompted to authenticate with the SAML IdP, and then be granted access to the SharePoint site.</li>
+                  </ul>
+                </li>
+                
+              </ol>
+                
+
+            </p>
+          </div>
+
+        </div>
+
+        <footer class="pt-3 mt-4 text-center border-bottom fixed-bottom fw-bolder text-primary">
+          &copy; Dave Diaries - 2023
+        </footer>
+      </div>
+
+
+    </div>
+    
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
